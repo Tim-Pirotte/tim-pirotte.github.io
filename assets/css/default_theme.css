@@ -1,0 +1,6 @@
+---
+---
+
+body[data-theme] {
+    background: url("{{ '/assets/images/default-theme/background.jpg' | relative_url }}");
+}
