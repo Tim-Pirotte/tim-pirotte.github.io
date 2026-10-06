@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} - Tim Pirotte</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/reset.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/layout.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/default_theme.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/minimal_theme.css' | relative_url }}">
@@ -15,45 +16,49 @@
   <header>
     <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <button id="toggle-theme">Minimal theme</button>
-    <h2>Navigation</h2>
-    <nav>
-      <ul>
-        <li>
-          <a href="{{ '/' | relative_url }}">Home</a>
-        </li>
-        <li>
-          <a href="{{ '/projects.html' | relative_url }}">Projects</a>
-        </li>
-        <li>
-          <a href="{{ '/posts.html' | relative_url}}">Posts</a>
-        </li>
-        <li>
-          <a href="{{ '/about.html' | relative_url }}">About</a>
-        </li>
-        <li>
-          <a href="{{ '/resume.html' | relative_url }}">Resume</a>
-        </li>
-        <li>
-          <a href="{{ '/contact.html' | relative_url }}">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <h2>Links</h2>
-    <nav>
-      <ul>
-        <li>
-          <a href="https://github.com/Tim-Pirotte">Github</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/tim-pirotte">LinkedIn</a>
-        </li>
-        <li>
-          <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-        </li>
-      </ul>
-    </nav>
   </header>
-  <main>{{ content }}</main>
+  <div id="middle">
+    <nav>
+      <div>
+        <h2>Navigation</h2>
+        <ul>
+          <li>
+            <a href="{{ '/' | relative_url }}">Home</a>
+          </li>
+          <li>
+            <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+          </li>
+          <li>
+            <a href="{{ '/posts.html' | relative_url}}">Posts</a>
+          </li>
+          <li>
+            <a href="{{ '/about.html' | relative_url }}">About</a>
+          </li>
+          <li>
+            <a href="{{ '/resume.html' | relative_url }}">Resume</a>
+          </li>
+          <li>
+            <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/Tim-Pirotte">Github</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tim-pirotte">LinkedIn</a>
+          </li>
+          <li>
+            <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    <main>{{ content }}</main>
+  </div>
   <footer>
     <p>Images from <a href="https://bettysgraphics.neocities.org">bettysgraphics.neocities.org</a></p>
   </footer>
