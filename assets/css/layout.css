@@ -47,7 +47,7 @@ html {
         > #middle {
             display: flex;
             padding-bottom: 1rem;
-            gap: 1rem;
+            gap: 1.5rem;
             flex-direction: column;
 
             @media (min-width: 768px) {
@@ -113,6 +113,32 @@ html {
             margin-top: 0.4rem;
             display: flex;
             gap: 0.5rem;
+        }
+    }
+}
+
+/* Home styling */
+#home {
+    > h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        > li {
+            > a {
+                display: block;
+                font-size: 1.1rem;
+                margin-bottom: 0.25rem;
+            }
+
+            > p {
+                font-size: 0.9rem;
+            }
         }
     }
 }
