@@ -1,0 +1,24 @@
+.marquee-container {
+    width: 100%;
+    height: 7rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    animation: marquee 5s reverse linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -25%;
+    }
+}
