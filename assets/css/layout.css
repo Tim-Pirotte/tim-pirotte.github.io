@@ -23,6 +23,7 @@
     }
 }
 
+/* Base page styling */
 html {
     min-height: 100vh;
 
@@ -74,11 +75,44 @@ html {
                     }
                 }
             }
+
+            > main {
+                > h1 {
+                    font-size: 1.75rem;
+                }
+            }
         }
 
         > footer {
             margin-top: auto;
             text-align: center;
+        }
+    }
+}
+
+/* Post styling */
+#post {
+    > header {
+        margin-bottom: 0.75rem;
+
+        > h1 {
+            font-size: 1.75rem;
+            margin-bottom: 0.15rem;
+        }
+
+        > h2 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        > h3 {
+            font-size: 0.9rem;
+        }
+
+        > ul {
+            margin-top: 0.4rem;
+            display: flex;
+            gap: 0.5rem;
         }
     }
 }
