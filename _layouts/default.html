@@ -10,9 +10,17 @@
   <link rel="stylesheet" href="{{ '/assets/css/default_theme.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/minimal_theme.css' | relative_url }}">
   <script type="module" src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  <script type="module" src="{{ '/assets/js/window.js' | relative_url }}"></script>
   <link rel="alternate" title="RSS Feed" type="application/rss+xml" href="{{ '/feed.xml' | relative_url }}">
 </head>
 <body>
+  <div class="hide" id="error-window">
+    <div id="error-icon"></div>
+    <div id="error-content" class="YmFzZTY0LWlzLXBhZ2U=">
+      <p class="or-is-there">Nothing to see here!</p>
+      <button id="close-window">Ok</button>
+    </div>
+  </div>
   <header>
     <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <button id="toggle-theme">Minimal theme</button>

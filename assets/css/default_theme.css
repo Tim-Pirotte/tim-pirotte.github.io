@@ -12,6 +12,53 @@ body[data-theme="default"] {
         color: white;
     }
 
+    button {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+        text-shadow: 0.0625rem 0.0625rem #00000066;
+    }
+
+    > #error-window:not(.hide) {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 15rem;
+        height: 6rem;
+        background: url("{{ '/assets/images/default-theme/error_background.gif' | relative_url }}");
+        border: 0.1rem solid #005DFF;
+        border-top: 1rem solid #005DFF;
+        border-radius: 0.2rem;
+        box-shadow: 0.5rem 0.5rem #00000066;
+        display: flex;
+        color: black;
+
+        > #error-icon {
+            width: 6rem;
+            height: 6rem;
+            background: url("{{ '/assets/images/default-theme/error.gif' | relative_url }}");
+            background-size: cover;
+        }
+
+        > #error-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem;
+            text-align: center;
+            gap: 0.5rem;
+
+            > button {
+                background: url("{{ '/assets/images/default-theme/ok.gif' | relative_url }}");
+                background-size: cover;
+                width: 3rem;
+                cursor: pointer;
+            }
+        }
+    }
+
     > #middle {
         > nav {
             background: url("{{ '/assets/images/default-theme/container_background.jpg' | relative_url }}");
