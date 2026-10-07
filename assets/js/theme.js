@@ -16,7 +16,7 @@ function init() {
     let savedThemeName = localStorage.getItem("theme");
 
     if (savedThemeName === null) {
-        savedThemeName = THEMES[0];
+        savedThemeName = THEMES[0].name;
     }
 
     const savedThemeIndex = getThemeIndexByName(savedThemeName);

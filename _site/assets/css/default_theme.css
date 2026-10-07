@@ -1,3 +1,57 @@
-body.theme-default {
-    background: url("/assets/images/default-theme/background.jpg");
+body[data-theme="default"] {
+    background: url("/assets/images/default-theme/background.gif");
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-shadow: 0.0625rem 0.0625rem #00000066;
+
+    a {
+        color: white;
+    }
+
+    > #middle {
+        > nav {
+            background: url("/assets/images/default-theme/container_background.jpg");
+            border-radius: 0.2rem;
+            border: 0.1rem solid #005DFF;
+            border-top: 1rem solid #005DFF;
+            position: relative;
+            box-shadow: 0.5rem 0.5rem #00000066;
+
+            > #window-icons {
+                display: block;
+                position: absolute;
+                width: 2.4rem;
+                height: 0.6rem;
+                right: 0.1rem;
+                top: -0.8rem;
+                display: flex;
+                justify-content: space-between;
+                gap: 0.2rem;
+
+                > div {
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    box-sizing: border-box;
+                    padding-right: 0.06rem;
+                    background: url("/assets/images/default-theme/window_button.gif");
+                    background-size: cover;
+                    font-size: 0.5rem;
+                    text-align: center;
+                    line-height: 0.6rem;
+
+                    &#close {
+                        background: url("/assets/images/default-theme/close_button.gif");
+                        background-size: cover;
+                    }
+
+                    &:hover {
+                        scale: 1.2;
+                        transition-duration: 0.5s;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }
