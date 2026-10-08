@@ -62,7 +62,6 @@ html {
                 display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
-                padding: 0.25rem;
                 height: fit-content;
 
                 @media (min-width: 768px) {
@@ -89,7 +88,7 @@ html {
             }
 
             > main {
-                > h1 {
+                h1 {
                     font-size: 1.75rem;
                 }
             }
@@ -110,7 +109,6 @@ html {
         margin-bottom: 0.75rem;
 
         > h1 {
-            font-size: 1.75rem;
             margin-bottom: 0.15rem;
         }
 
@@ -147,7 +145,7 @@ html {
 }
 
 /* Home styling */
-#home {
+#recent-posts {
     > h2 {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;

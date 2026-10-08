@@ -4,7 +4,12 @@ title: Home
 ---
 
 <h1>Home</h1>
-<div id="home">
+<div id="recent-posts">
+  <div class="hide" id="window-icons">
+    <div id="minimize"></div>
+    <div id="full-screen"></div>
+    <div id="close"></div>
+  </div>
   <h2>Recent Posts</h2>
   <ul>
     {% for post in site.posts %}
