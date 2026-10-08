@@ -103,6 +103,12 @@ body[data-theme="default"] {
     }
 
     #post {
+        background-color: #000000a1;
+        box-shadow: 0.5rem 0.5rem #00000066;
+        border-radius: 0.2rem;
+        border: 0.1rem solid #232323;
+        border-top: 1rem solid #232323;
+
         > header {
             > h3 {
                 color: #ebebeb;
