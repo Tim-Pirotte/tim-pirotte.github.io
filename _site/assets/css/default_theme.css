@@ -21,38 +21,39 @@ body[data-theme="default"] {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 15rem;
-        height: 6rem;
+        width: 14rem;
+        height: 5rem;
         background: url("/assets/images/default-theme/error_background.gif");
-        border: 0.1rem solid #005DFF;
-        border-top: 1rem solid #005DFF;
+        border: 0.1rem solid #a9c8ff;
+        border-top: 1rem solid #a9c8ff;
         border-radius: 0.2rem;
         box-shadow: 0.5rem 0.5rem #00000066;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: black;
+        text-align: center;
+        gap: 0.6rem;
 
-        > #error-icon {
-            width: 6rem;
-            height: 6rem;
-            background: url("/assets/images/default-theme/error.gif");
+        > button {
+            background: url("/assets/images/default-theme/ok.gif");
             background-size: cover;
+            width: 3rem;
+            cursor: pointer;
         }
+    }
 
-        > #error-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 0.75rem;
-            text-align: center;
-            gap: 0.5rem;
-
-            > button {
-                background: url("/assets/images/default-theme/ok.gif");
-                background-size: cover;
-                width: 3rem;
-                cursor: pointer;
-            }
+    > header {
+        > #toggle-theme {
+            cursor: pointer;
+            border: none;
+            padding-right: 3rem;
+            background: url("/assets/images/default-theme/theme.gif");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 2rem;
         }
     }
 
@@ -60,8 +61,8 @@ body[data-theme="default"] {
         > nav {
             background: url("/assets/images/default-theme/container_background.jpg");
             border-radius: 0.2rem;
-            border: 0.1rem solid #005DFF;
-            border-top: 1rem solid #005DFF;
+            border: 0.1rem solid #3880ff;
+            border-top: 1rem solid #3880ff;
             position: relative;
             box-shadow: 0.5rem 0.5rem #00000066;
 
@@ -115,7 +116,12 @@ body[data-theme="default"] {
             }
 
             > ul {
-                color: #6dddff;
+                > li {
+                    > a {
+                        color: #6dddff;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }

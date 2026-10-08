@@ -11,7 +11,9 @@ layout: default
     </h3>
     <ul>
       {% for label in page.labels %}
-      <li>#{{ label.name }}</li>
+      <li>
+        <a href="{{ '/posts' | relative_url }}?label={{ label.name | uri_escape }}">#{{ label.name }}</a>
+      </li>
       {% endfor %}
     </ul>
   </header>
