@@ -101,4 +101,16 @@ body[data-theme="default"] {
             }
         }
     }
+
+    #post {
+        > header {
+            > h3 {
+                color: #ebebeb;
+            }
+
+            > ul {
+                color: #6dddff;
+            }
+        }
+    }
 }
