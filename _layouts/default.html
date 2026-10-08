@@ -11,10 +11,13 @@
   <link rel="stylesheet" href="{{ '/assets/css/minimal_theme.css' | relative_url }}">
   <script type="module" src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   <script type="module" src="{{ '/assets/js/window.js' | relative_url }}"></script>
+  {% for script in page.scripts %}
+  <script type="module" src="{{ '/assets/js/' | append: script | relative_url }}"></script>
+  {% endfor %}
   <link rel="alternate" title="RSS Feed" type="application/rss+xml" href="{{ '/feed.xml' | relative_url }}">
 </head>
 <body>
-  <div class="hide" id="error-window" class="YmFzZTY0LWlzLXBhZ2U=">
+  <div class="hide YmFzZTY0LWlzLXBhZ2U=" id="error-window">
     <p class="or-is-there">Nothing to see here!</p>
     <button id="close-window">Ok</button>
   </div>

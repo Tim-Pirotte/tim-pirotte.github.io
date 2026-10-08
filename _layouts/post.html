@@ -12,7 +12,7 @@ layout: default
     <ul>
       {% for label in page.labels %}
       <li>
-        <a href="{{ '/posts' | relative_url }}?label={{ label.name | uri_escape }}">#{{ label.name }}</a>
+        <a href="{{ '/posts' | relative_url }}?label={{ label.name | slugify | uri_escape }}">#{{ label.name }}</a>
       </li>
       {% endfor %}
     </ul>

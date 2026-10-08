@@ -11,10 +11,13 @@
   <link rel="stylesheet" href="/assets/css/minimal_theme.css">
   <script type="module" src="/assets/js/theme.js"></script>
   <script type="module" src="/assets/js/window.js"></script>
+  
+  <script type="module" src="/assets/js/posts.js"></script>
+  
   <link rel="alternate" title="RSS Feed" type="application/rss+xml" href="/feed.xml">
 </head>
 <body>
-  <div class="hide" id="error-window" class="YmFzZTY0LWlzLXBhZ2U=">
+  <div class="hide YmFzZTY0LWlzLXBhZ2U=" id="error-window">
     <p class="or-is-there">Nothing to see here!</p>
     <button id="close-window">Ok</button>
   </div>
@@ -68,50 +71,44 @@
       </div>
       </nav>
     <main><h1>Posts</h1>
-<ul>
-
-    <li>
-        <a href="/2026/10/06/test.html">First Post</a>
-        <ul>
-            
-            <li>
-                <a href="/posts?label=label1">
-                    #label1
-                </a>
-            </li>
-            
-            <li>
-                <a href="/posts?label=label2">
-                    #label2
-                </a>
-            </li>
-            
-        </ul>
-        <time datetime="2026-10-06T00:00:00+02:00">October 6, 2026</time>
-        <p>First post on this site.</p>
-    </li>
-
-    <li>
-        <a href="/2026/10/05/second.html">Second Post</a>
-        <ul>
-            
-            <li>
-                <a href="/posts?label=label1">
-                    #label1
-                </a>
-            </li>
-            
-            <li>
-                <a href="/posts?label=label2">
-                    #label2
-                </a>
-            </li>
-            
-        </ul>
-        <time datetime="2026-10-05T00:00:00+02:00">October 5, 2026</time>
-        <p>Second post on this site.</p>
-    </li>
-
+<ul id="posts">
+  
+  <li data-labels="label1,label2">
+    <a href="/2026/10/06/test.html">First Post</a>
+    <ul>
+      
+      <li>
+        <a href="/posts?label=label1">
+        #label1
+        </a>
+      </li>
+      
+      <li>
+        <a href="/posts?label=label2">
+        #label2
+        </a>
+      </li>
+      
+    </ul>
+    <time datetime="2026-10-06T00:00:00+02:00">October 6, 2026</time>
+    <p>First post on this site.</p>
+  </li>
+  
+  <li data-labels="label1">
+    <a href="/2026/10/05/second.html">Second Post</a>
+    <ul>
+      
+      <li>
+        <a href="/posts?label=label1">
+        #label1
+        </a>
+      </li>
+      
+    </ul>
+    <time datetime="2026-10-05T00:00:00+02:00">October 5, 2026</time>
+    <p>Second post on this site.</p>
+  </li>
+  
 </ul>
 </main>
   </div>
