@@ -5,6 +5,15 @@ body[data-theme="default"] {
     font-weight: 700;
     text-shadow: 0.0625rem 0.0625rem #00000066;
 
+    .window {
+        position: relative;
+        border: 0.1rem solid;
+        border-top: 1rem solid;
+        border-radius: 0.2rem;
+        box-shadow: 0.5rem 0.5rem #00000066;
+        padding: 0.25rem;
+    }
+
     a {
         color: white;
     }
@@ -26,10 +35,7 @@ body[data-theme="default"] {
         height: 5rem;
         background: url("/assets/images/default-theme/error_background.gif");
         background-size: 6rem;
-        border: 0.1rem solid #a9c8ff;
-        border-top: 1rem solid #a9c8ff;
-        border-radius: 0.2rem;
-        box-shadow: 0.5rem 0.5rem #00000066;
+        border-color: #a9c8ff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -63,23 +69,12 @@ body[data-theme="default"] {
     > #middle {
         > nav {
             background: url("/assets/images/default-theme/container_background.jpg");
-            border-radius: 0.2rem;
-            padding: 0.25rem;
-            border: 0.1rem solid #3880ff;
-            border-top: 1rem solid #3880ff;
-            position: relative;
-            box-shadow: 0.5rem 0.5rem #00000066;
+            border-color: #3880ff;
         }
     }
 
     #recent-posts {
-        filter: hue-rotate(0deg);
-        position: relative;
-        border: 0.1rem solid #f9c298;
-        border-top: 1rem solid #f9c298;
-        box-shadow: 0.5rem 0.5rem #00000066;
-        border-radius: 0.2rem;
-        padding: 0.25rem;
+        border-color: #f9c298;
         background: url("/assets/images/default-theme/recent_posts_background.jpg");
     
         > #window-icons {
@@ -92,11 +87,7 @@ body[data-theme="default"] {
 
     #post {
         background-color: #000000a1;
-        box-shadow: 0.5rem 0.5rem #00000066;
-        border-radius: 0.2rem;
-        border: 0.1rem solid #232323;
-        border-top: 1rem solid #232323;
-        position: relative;
+        border-color: #232323;
 
         > #window-icons {
             > div {

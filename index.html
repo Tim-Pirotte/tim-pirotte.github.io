@@ -4,7 +4,7 @@ title: Home
 ---
 
 <h1>Home</h1>
-<div id="recent-posts">
+<div class="window" id="recent-posts">
   <div class="hide" id="window-icons">
     <div id="minimize"></div>
     <div id="full-screen"></div>
@@ -15,6 +15,16 @@ title: Home
     {% for post in site.posts %}
       <li>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <ul>
+          {% for label in post.labels %}
+          <li>
+            <a href="{{ '/posts' | relative_url }}?label={{ label.name | slugify | uri_escape }}">
+            #{{ label.name }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
         <p>{{ post.description }}</p>
       </li>
     {% endfor %}
