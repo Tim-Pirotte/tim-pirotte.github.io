@@ -1,2 +1,14 @@
 title: Tim Pirotte
 description: Personal blog
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name.html
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project

@@ -5,29 +5,11 @@ title: Projects
 
 <h1>Projects</h1>
 <ul>
+  {% for project in site.projects %}
     <li>
-        <a href="">
-            <span>Constraining Adversarial Attacks</span>
-        </a>
+      <a href="{{ project.url | relative_url }}">
+        <span>{{ project.title }}</span>
+      </a>
     </li>
-    <li>
-        <a href="">
-            <span>(Dif)Fusion Fold</span>
-        </a>
-    </li>
-    <li>
-        <a href="">
-            <span>RNA-folding</span>
-        </a>
-    </li>
-    <li>
-        <a href="">
-            <span>Solaris</span>
-        </a>
-    </li>
-    <li>
-        <a href="">
-            <span>Splendor</p>
-        </a>
-    </li>
+  {% endfor %}
 </ul>
