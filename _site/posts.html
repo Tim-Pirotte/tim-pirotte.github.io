@@ -27,10 +27,10 @@
   </header>
   <div id="middle">
     <nav class="window">
-      <div class="hide" id="window-icons">
-        <div id="minimize"></div>
-        <div id="full-screen"></div>
-        <div id="close"></div>
+      <div class="hide window-icons">
+        <div class="minimize"></div>
+        <div class="full-screen"></div>
+        <div class="close"></div>
       </div>
       <div>
         <h2>Navigation</h2>
@@ -68,7 +68,24 @@
       </div>
     </nav>
     <main><h1>Posts</h1>
-<div id="posts">
+<div id="posts" class="window">
+  <div class="hide window-icons">
+    <div class="minimize"></div>
+    <div class="full-screen"></div>
+    <div class="close"></div>
+  </div>
+  <div class="top">
+    <div class="search">
+      <input type="text" id="search">
+      <label for="search">Search</label>
+      <button class="hide">Advanced Search</button>
+    </div>
+    <div class="hide">
+      <p>Web</p>
+      <a href="">Show options...</a>
+      <p>Results <span>1</span> - <span>TODO</span> of about <span>TODO</span> for <span>seo.</span> (<span>0.20</span>) seconds</p>
+    </div>
+  </div>
   <ul>
     
       <li>
@@ -92,6 +109,9 @@
           <time datetime="2026-10-06T00:00:00+02:00">October 6, 2026</time>
         </div>
         <p>First post on this site.</p>
+        <div class="hide">
+          <p><a href="">TODO</a> - <a href="">Cached</a> - <a href="">Similar pages</a></p>
+        </div>
       </li>
     
       <li>
@@ -109,6 +129,9 @@
           <time datetime="2026-10-05T00:00:00+02:00">October 5, 2026</time>
         </div>
         <p>Second post on this site.</p>
+        <div class="hide">
+          <p><a href="">TODO</a> - <a href="">Cached</a> - <a href="">Similar pages</a></p>
+        </div>
       </li>
     
   </ul>
