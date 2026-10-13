@@ -6,21 +6,25 @@ scripts:
 ---
 
 <h1>Posts</h1>
-<ul id="posts">
-  {% for post in site.posts %}
-  <li data-labels="{% for label in post.labels %}{{ label.name | slugify }}{% unless forloop.last %},{% endunless %}{% endfor %}">
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <ul>
-      {% for label in post.labels %}
+<div id="posts">
+  <ul>
+    {% for post in site.posts %}
       <li>
-        <a href="{{ '/posts' | relative_url }}?label={{ label.name | slugify | uri_escape }}">
-        #{{ label.name }}
-        </a>
+        <div class="top">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <ul>
+            {% for label in post.labels %}
+            <li>
+              <a href="{{ '/posts' | relative_url }}?label={{ label.name | slugify | uri_escape }}">
+              #{{ label.name }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </div>
+        <p>{{ post.description }}</p>
       </li>
-      {% endfor %}
-    </ul>
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-    <p>{{ post.description }}</p>
-  </li>
-  {% endfor %}
+    {% endfor %}
+  </ul>
 </ul>

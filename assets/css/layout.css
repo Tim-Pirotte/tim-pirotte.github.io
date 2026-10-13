@@ -27,7 +27,6 @@
     display: none;
 }
 
-/* Base page styling */
 html {
     min-height: 100vh;
 
@@ -53,6 +52,7 @@ html {
             padding-bottom: 1rem;
             gap: 1.5rem;
             flex-direction: column;
+            width: 100%;
 
             @media (min-width: 768px) {
                 flex-direction: row;
@@ -88,6 +88,8 @@ html {
             }
 
             > main {
+                width: 100%;
+
                 h1 {
                     font-size: 1.75rem;
                 }
@@ -101,7 +103,6 @@ html {
     }
 }
 
-/* Post styling */
 #post {
     padding: 0.5rem;
 
@@ -144,8 +145,10 @@ html {
     }
 }
 
-/* Home styling */
 #recent-posts {
+    width: 100%;
+    box-sizing: border-box;
+
     > h2 {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
@@ -154,13 +157,29 @@ html {
     > ul {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1.5rem;
 
         > li {
-            > a {
-                display: block;
-                font-size: 1.1rem;
-                margin-bottom: 0.25rem;
+            > .top {
+                display: flex;
+                gap: 1rem;
+
+                > a {
+                    display: block;
+                    font-size: 1.1rem;
+                    margin-bottom: 0.25rem;
+                }
+            
+                > ul {
+                    display: flex;
+                    gap: 0.5rem;
+                }
+
+                > time {
+                    flex-grow: 1;
+                    text-align: right;
+                    margin-right: 1rem;
+                }
             }
 
             > p {

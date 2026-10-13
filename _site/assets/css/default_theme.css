@@ -83,6 +83,21 @@ body[data-theme="default"] {
                 box-shadow: 0.05rem 0.05rem #c27840, -0.05rem -0.05rem #ffc293;
             }
         }
+
+        > ul {
+            > li {
+                > .top {
+                    > ul {
+                        > li {
+                            > a {
+                                color: #6dddff;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #post {
