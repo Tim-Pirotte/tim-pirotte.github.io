@@ -87,8 +87,7 @@ body[data-theme="default"] {
         text-shadow: none;
 
         > button {
-            background: url("{{ '/assets/images/default-theme/ok.gif' | relative_url }}");
-            background-size: cover;
+            background-color: #911313;
             width: 3rem;
             cursor: pointer;
         }
