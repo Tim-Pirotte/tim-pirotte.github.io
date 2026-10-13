@@ -8,6 +8,44 @@ body[data-theme="default"] {
     font-weight: 700;
     text-shadow: 0.0625rem 0.0625rem #00000066;
 
+    .nav-icon {
+        background-size: 0.9rem;
+        background-repeat: no-repeat;
+        padding-left: 1.25rem;
+    }
+
+    #nav-home {
+        background-image: url("{{ '/assets/images/default-theme/home.png' | relative_url }}");
+    }
+
+    #nav-projects {
+        background-image: url("{{ '/assets/images/default-theme/projects.png' | relative_url }}");
+    }
+
+    #nav-posts {
+        background-image: url("{{ '/assets/images/default-theme/posts.png' | relative_url }}");
+    }
+
+    #nav-about {
+        background-image: url("{{ '/assets/images/default-theme/about.png' | relative_url }}");
+    }
+
+    #nav-resume {
+        background-image: url("{{ '/assets/images/default-theme/resume.png' | relative_url }}");
+    }
+
+    #github {
+        background-image: url("{{ '/assets/images/default-theme/github.png' | relative_url }}");
+    }
+
+    #linkedin {
+        background-image: url("{{ '/assets/images/default-theme/linkedin.png' | relative_url }}");
+    }
+
+    #rss {
+        background-image: url("{{ '/assets/images/default-theme/rss.png' | relative_url }}");
+    }
+
     .window {
         position: relative;
         border: 0.1rem solid;

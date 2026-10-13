@@ -5,6 +5,44 @@ body[data-theme="default"] {
     font-weight: 700;
     text-shadow: 0.0625rem 0.0625rem #00000066;
 
+    .nav-icon {
+        background-size: 0.9rem;
+        background-repeat: no-repeat;
+        padding-left: 1.25rem;
+    }
+
+    #nav-home {
+        background-image: url("/assets/images/default-theme/home.png");
+    }
+
+    #nav-projects {
+        background-image: url("/assets/images/default-theme/projects.png");
+    }
+
+    #nav-posts {
+        background-image: url("/assets/images/default-theme/posts.png");
+    }
+
+    #nav-about {
+        background-image: url("/assets/images/default-theme/about.png");
+    }
+
+    #nav-resume {
+        background-image: url("/assets/images/default-theme/resume.png");
+    }
+
+    #github {
+        background-image: url("/assets/images/default-theme/github.png");
+    }
+
+    #linkedin {
+        background-image: url("/assets/images/default-theme/linkedin.png");
+    }
+
+    #rss {
+        background-image: url("/assets/images/default-theme/rss.png");
+    }
+
     .window {
         position: relative;
         border: 0.1rem solid;
