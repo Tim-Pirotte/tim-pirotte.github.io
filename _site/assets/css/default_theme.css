@@ -214,5 +214,51 @@ body[data-theme="default"] {
     #posts {
         border-color: #e0e0e0;
         background-color: #efefef;
+
+        > .top {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+            display: flex;
+            
+            > .search {
+                width: 100%;
+                box-sizing: border-box;
+                background-image: url("/assets/images/default-theme/search.png");
+                padding: 0.25rem 0 0.25rem 8rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                > form {
+                    > input {
+                        box-shadow: rgba(10, 37, 64, 0.35) 0 -1px 0 0 inset;
+                        background-color: #efefef;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    > button {
+                        background-color: rgb(237, 237, 237);
+                        border: 0.1rem solid rgb(192, 191, 191);
+                        background: linear-gradient(360deg, #cacaca, #ffffff);
+                        color: black;   
+                        border-radius: 0.15rem;
+                        text-shadow: none;
+                    }
+                }
+
+                > button {
+                    display: block;
+                    background: none;
+                    border: none;
+                    text-shadow: none;
+                    color: #0000CC;
+                    text-decoration: underline; 
+                    font-size: 0.75rem;
+                }
+            }
+        }
     }
 }
