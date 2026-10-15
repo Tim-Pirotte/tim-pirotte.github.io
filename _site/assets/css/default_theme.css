@@ -162,7 +162,7 @@ body[data-theme="default"] {
         background: url("/assets/images/default-theme/recent_posts_background.jpg");
     
         > .window-icons {
-            > div {
+            > div:not(:last-child) {
                 background-color: #ffa35c;
                 box-shadow: 0.05rem 0.05rem #c27840, -0.05rem -0.05rem #ffc293;
             }
@@ -189,7 +189,7 @@ body[data-theme="default"] {
         border-color: #232323;
 
         > .window-icons {
-            > div {
+            > div:not(:last-child) {
                 background-color: #373737;
                 box-shadow: 0.05rem 0.05rem #1f1f1f, -0.05rem -0.05rem #9b9b9b;
             }
@@ -212,12 +212,23 @@ body[data-theme="default"] {
     }
 
     #posts {
-        font-family: Arial, sans-serif;
-        text-shadow: none;
         padding: 1rem;
         border-color: #e0e0e0;
         background-color: #efefef;
-        color: black;
+
+        > .top, ul {
+            font-family: Arial, sans-serif;
+            text-shadow: none;
+            color: black;
+        }
+
+        > .window-icons {
+            > div:not(:last-child) {
+                color: black;
+                background-color: #f1f1f1;
+                box-shadow: 0.05rem 0.05rem #c4c4c4, -0.05rem -0.05rem #f4f4f4;
+            }
+        }
 
         > .top {
             width: 100%;

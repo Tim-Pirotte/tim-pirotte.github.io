@@ -2,10 +2,11 @@ init();
 
 function init() {
     document
-        .querySelectorAll("#window-icons div")
+        .querySelectorAll(".window-icons div")
         .forEach(icon => icon.addEventListener("click", toggleErrorWindow));
 
     document.getElementById("close-window").addEventListener("click", toggleErrorWindow);
+    document.getElementById("advanced-search")?.addEventListener("click", toggleErrorWindow);
 }
 
 function toggleErrorWindow() {
