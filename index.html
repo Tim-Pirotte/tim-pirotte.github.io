@@ -1,34 +1,8 @@
 ---
 layout: default
-title: Home
+title: About
 ---
 
-<h1>Home</h1>
-<div class="window" id="recent-posts">
-  <div class="hide window-icons">
-    <div class="minimize"></div>
-    <div class="full-screen"></div>
-    <div class="close"></div>
-  </div>
-  <h2>Recent Posts</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <div class="top">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <ul>
-            {% for label in post.labels %}
-            <li>
-              <a href="{{ '/posts' | relative_url }}?label={{ label.name | slugify | uri_escape }}">
-              #{{ label.name }}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-        </div>
-        <p>{{ post.description }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<h1>About</h1>
+<img src="{{ '/assets/images/default-theme/under_construction.gif' | relative_url }}" alt="Under construction">
+

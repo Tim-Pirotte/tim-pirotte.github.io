@@ -11,10 +11,6 @@ body[data-theme="default"] {
         padding-left: 1.25rem;
     }
 
-    #nav-home {
-        background-image: url("/assets/images/default-theme/home.png");
-    }
-
     #nav-projects {
         background-image: url("/assets/images/default-theme/projects.png");
     }
@@ -154,33 +150,6 @@ body[data-theme="default"] {
         > nav {
             background: url("/assets/images/default-theme/container_background.jpg");
             border-color: #3880ff;
-        }
-    }
-
-    #recent-posts {
-        border-color: #f9c298;
-        background: url("/assets/images/default-theme/recent_posts_background.jpg");
-    
-        > .window-icons {
-            > div:not(:last-child) {
-                background-color: #ffa35c;
-                box-shadow: 0.05rem 0.05rem #c27840, -0.05rem -0.05rem #ffc293;
-            }
-        }
-
-        > ul {
-            > li {
-                > .top {
-                    > ul {
-                        > li {
-                            > a {
-                                color: #6dddff;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 
