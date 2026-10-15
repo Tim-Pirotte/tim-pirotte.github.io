@@ -164,7 +164,7 @@ body[data-theme="default"] {
         border-color: #f9c298;
         background: url("{{ '/assets/images/default-theme/recent_posts_background.jpg' | relative_url }}");
     
-        > #window-icons {
+        > .window-icons {
             > div {
                 background-color: #ffa35c;
                 box-shadow: 0.05rem 0.05rem #c27840, -0.05rem -0.05rem #ffc293;
@@ -191,7 +191,7 @@ body[data-theme="default"] {
         background-color: #000000a1;
         border-color: #232323;
 
-        > #window-icons {
+        > .window-icons {
             > div {
                 background-color: #373737;
                 box-shadow: 0.05rem 0.05rem #1f1f1f, -0.05rem -0.05rem #9b9b9b;
@@ -215,6 +215,8 @@ body[data-theme="default"] {
     }
 
     #posts {
+        font-family: Arial, sans-serif;
+
         border-color: #e0e0e0;
         background-color: #efefef;
 
@@ -228,7 +230,7 @@ body[data-theme="default"] {
                 width: 100%;
                 box-sizing: border-box;
                 background-image: url("{{ '/assets/images/default-theme/search.png' | relative_url }}");
-                padding: 0.25rem 0 0.25rem 8rem;
+                padding-left: 8rem;
                 background-size: contain;
                 background-repeat: no-repeat;
 
