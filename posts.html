@@ -20,10 +20,9 @@ scripts:
       </form>
       <button class="hide">Advanced Search</button>
     </div>
-    <div class="hide">
+    <div class="bottom hide">
       <p>Web</p>
-      <a href="">Show options...</a>
-      <p>Results <span>1</span> - <span>TODO</span> of about <span>TODO</span> for <span>seo.</span> (<span>0.20</span>) seconds</p>
+      <p>Results <span>1</span> - <span>{{ site.posts.size }}</span> of about <span>{{ site.posts.size }}</span> for <span>seo.</span> (<span>0.20</span>) seconds</p>
     </div>
   </div>
   <ul>
@@ -40,12 +39,9 @@ scripts:
             </li>
             {% endfor %}
           </ul>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
         </div>
         <p>{{ post.description }}</p>
-        <div class="hide">
-          <p><a href="">TODO</a> - <a href="">Cached</a> - <a href="">Similar pages</a></p>
-        </div>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       </li>
     {% endfor %}
   </ul>

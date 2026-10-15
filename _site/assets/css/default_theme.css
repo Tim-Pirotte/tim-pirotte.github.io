@@ -213,28 +213,39 @@ body[data-theme="default"] {
 
     #posts {
         font-family: Arial, sans-serif;
-
+        text-shadow: none;
+        padding: 1rem;
         border-color: #e0e0e0;
         background-color: #efefef;
+        color: black;
 
         > .top {
             width: 100%;
             box-sizing: border-box;
             margin-bottom: 1rem;
-            display: flex;
+            border-top: 0.05rem solid #d3d3d3;
+            padding-top: 0.75rem;
             
             > .search {
+                display: flex;
+                gap: 1rem;
                 width: 100%;
                 box-sizing: border-box;
                 background-image: url("/assets/images/default-theme/search.png");
-                padding-left: 8rem;
+                padding: 0.25rem 0 0.25rem 8rem;
                 background-size: contain;
                 background-repeat: no-repeat;
 
                 > form {
+                    display: flex;
+                    gap: 1rem;
+                    flex-grow: 1;
+
                     > input {
-                        box-shadow: rgba(10, 37, 64, 0.35) 0 -1px 0 0 inset;
+                        box-shadow: rgba(10, 37, 64, 0.35) 0 0 0.0625rem 0.0625rem inset;
+                        border: 0.03rem solid #969696;
                         background-color: #efefef;
+                        flex-grow: 1;
 
                         &:focus {
                             outline: none;
@@ -248,6 +259,7 @@ body[data-theme="default"] {
                         color: black;   
                         border-radius: 0.15rem;
                         text-shadow: none;
+                        cursor: pointer;
                     }
                 }
 
@@ -258,6 +270,69 @@ body[data-theme="default"] {
                     text-shadow: none;
                     color: #0000CC;
                     text-decoration: underline; 
+                    font-size: 0.75rem;
+                    cursor: pointer;
+                }
+            }
+
+            > .bottom {
+                display: flex;
+                font-size: 0.75rem;
+                justify-content: space-between;
+                margin-top: 0.75rem;
+                padding: 0.25rem;
+                border-top: 0.1rem solid #90ABDA;
+                background-color: #EFF7F9;
+
+                > p {
+                    &:first-child, > span {
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+
+        > ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            > li {
+                > .top {
+                    display: flex;
+                    gap: 0.25rem;
+                    padding-bottom: 0.25rem;
+
+                    > a {
+                        color: #0000CC;
+                        font-weight: bold;
+                    }
+
+                    > ul {
+                        display: flex;
+                        gap: 0.5rem;
+
+                        > li {
+                            &:first-child::before {
+                                content: '-';
+                                color: #0000CC;
+                                font-weight: lighter;
+                            }
+
+                            > a {
+                                color: #0000CC;
+                                font-weight: lighter;
+                            }
+                        }
+                    }
+                }
+
+                > p {
+                    font-size: 0.9rem;
+                }
+
+                > time {
+                    color: #007a27;
                     font-size: 0.75rem;
                 }
             }
