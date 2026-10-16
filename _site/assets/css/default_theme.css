@@ -208,18 +208,27 @@ body[data-theme="default"] {
             
             > .search {
                 display: flex;
-                gap: 1rem;
+                gap: 0.4rem;
                 width: 100%;
                 box-sizing: border-box;
                 background-image: url("/assets/images/default-theme/search.png");
-                padding: 0.25rem 0 0.25rem 8rem;
-                background-size: contain;
+                padding: 2rem 0 0 0;
+                background-size: 5.5rem;
                 background-repeat: no-repeat;
+
+                @media (min-width: 768px) {
+                    padding: 0.25rem 0 0.25rem 8rem;
+                    gap: 1rem;
+                }
 
                 > form {
                     display: flex;
-                    gap: 1rem;
+                    gap: 0.4rem;
                     flex-grow: 1;
+
+                    @media (min-width: 768px) {
+                        gap: 1rem;
+                    }
 
                     > input {
                         box-shadow: rgba(10, 37, 64, 0.35) 0 0 0.0625rem 0.0625rem inset;
@@ -240,6 +249,11 @@ body[data-theme="default"] {
                         border-radius: 0.15rem;
                         text-shadow: none;
                         cursor: pointer;
+                        font-size: 0.75rem;
+
+                        @media (min-width: 768px) {
+                            font-size: 0.9rem;
+                        }
                     }
                 }
 
@@ -250,19 +264,27 @@ body[data-theme="default"] {
                     text-shadow: none;
                     color: #0000CC;
                     text-decoration: underline; 
-                    font-size: 0.75rem;
+                    font-size: 0.6rem;
                     cursor: pointer;
+
+                    @media (min-width: 768px) {
+                        font-size: 0.75rem;
+                    }
                 }
             }
 
             > .bottom {
                 display: flex;
-                font-size: 0.75rem;
+                font-size: 0.6rem;
                 justify-content: space-between;
                 margin-top: 0.75rem;
                 padding: 0.25rem;
                 border-top: 0.1rem solid #90ABDA;
                 background-color: #EFF7F9;
+
+                @media (min-width: 768px) {
+                    font-size: 0.75rem;
+                }
 
                 > p {
                     &:first-child, > span {
