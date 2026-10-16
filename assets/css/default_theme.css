@@ -205,7 +205,6 @@ body[data-theme="default"] {
         > .top {
             width: 100%;
             box-sizing: border-box;
-            margin-bottom: 1rem;
             border-top: 0.05rem solid #d3d3d3;
             padding-top: 0.75rem;
             
@@ -298,15 +297,9 @@ body[data-theme="default"] {
         }
 
         > ul {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
             > li {
                 > .top {
-                    display: flex;
                     gap: 0.25rem;
-                    padding-bottom: 0.25rem;
 
                     > a {
                         color: #0000CC;
@@ -314,9 +307,6 @@ body[data-theme="default"] {
                     }
 
                     > ul {
-                        display: flex;
-                        gap: 0.5rem;
-
                         > li {
                             &:first-child::before {
                                 content: '-';
@@ -332,13 +322,8 @@ body[data-theme="default"] {
                     }
                 }
 
-                > p {
-                    font-size: 0.9rem;
-                }
-
                 > time {
                     color: #007a27;
-                    font-size: 0.75rem;
                 }
             }
         }
