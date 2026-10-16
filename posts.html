@@ -27,7 +27,7 @@ scripts:
   </div>
   <ul>
     {% for post in site.posts %}
-      <li>
+      <li data-labels="{% for label in post.labels %}{{ label.name | slugify }}{% unless forloop.last %},{% endunless %}{% endfor %}">
         <div class="top">
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           <ul>
