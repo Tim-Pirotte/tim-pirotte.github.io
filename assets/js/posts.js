@@ -28,6 +28,10 @@ function init() {
             post.hidden = !normalize(title).includes(normalize(requestedSearch));
         });
     }
+
+    const count = document.querySelectorAll("#posts > ul > li:not([hidden])").length;
+    document.querySelectorAll(".posts-count").forEach(c => c.textContent = count);
+    document.querySelector(".search-duration").textContent = getRandomArbitrary(0.15, 0.45).toFixed(2);
 }
 
 function normalize(text) {
@@ -42,4 +46,8 @@ function truncate(text, length) {
     }
 
     return text;
+}
+
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
 }
