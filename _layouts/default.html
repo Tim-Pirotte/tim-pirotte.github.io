@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="{{ '/assets/css/layout.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/default_theme.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/minimal_theme.css' | relative_url }}">
+  {% for style in page.styles %}
+  <link rel="stylesheet" href="{{ '/assets/css/' | append: style | relative_url }}">
+  {% endfor %}
   <script type="module" src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   <script type="module" src="{{ '/assets/js/window.js' | relative_url }}"></script>
   {% for script in page.scripts %}
