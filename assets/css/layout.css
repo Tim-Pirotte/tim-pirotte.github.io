@@ -122,6 +122,7 @@ html {
 
     > p {
         margin-bottom: 1rem;
+        line-height: 120%;
     }
 }
 
