@@ -6,9 +6,19 @@
     <description>Personal blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Oct 2026 22:33:32 +0200</pubDate>
-    <lastBuildDate>Mon, 19 Oct 2026 22:33:32 +0200</lastBuildDate>
+    <pubDate>Sat, 24 Oct 2026 11:33:31 +0200</pubDate>
+    <lastBuildDate>Sat, 24 Oct 2026 11:33:31 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>AI Act</title>
+        <description>What the AI Act entails.</description>
+        <pubDate>Sat, 24 Oct 2026 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2026/10/24/ai-act.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2026/10/24/ai-act.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>This</title>
