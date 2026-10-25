@@ -114,6 +114,7 @@ html {
         list-style-type: square;
         list-style-position: inside;
         line-height: 125%;
+        margin-bottom: 0.5rem;
     }
 
     > h4 {
