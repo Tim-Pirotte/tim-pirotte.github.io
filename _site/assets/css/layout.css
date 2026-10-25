@@ -105,6 +105,12 @@ html {
         }
     }
 
+    > ul {
+        list-style-type: square;
+        list-style-position: inside;
+        line-height: 125%;
+    }
+
     > h4 {
         font-size: 1.5rem;
         margin: 1rem 0 0.3rem 0;
