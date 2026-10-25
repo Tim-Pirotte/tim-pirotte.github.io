@@ -82,6 +82,11 @@ html {
 #post {
     padding: 0.5rem;
 
+    sup {
+        vertical-align: super;
+        font-size: 0.75rem;
+    }
+
     > header {
         margin-bottom: 0.75rem;
 
