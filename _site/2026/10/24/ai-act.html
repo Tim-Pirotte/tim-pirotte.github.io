@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Act - Tim</title>
-  <meta name="description" content="What the AI Act entails.">
+  <title>EU AI Act - Tim</title>
+  <meta name="description" content="What the EU AI Act entails.">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/layout.css">
   <link rel="stylesheet" href="/assets/css/default_theme.css">
@@ -72,8 +72,8 @@
     <div class="close"></div>
   </div>
   <header>
-    <h1>AI Act</h1>
-    <h2>What the AI Act entails.</h2>
+    <h1>EU AI Act</h1>
+    <h2>What the EU AI Act entails.</h2>
     <h3>
       <time datetime="2026-10-24T00:00:00+02:00">October 24, 2026</time>
     </h3>
@@ -90,7 +90,11 @@
     </ul>
   </header>
   <p>
-    Recently, a Tech&Meet was held, by the company Mr. Franklin, to talk about the EU AI Act. 
+    Disclaimer: This is not legal advice. A high level overview of the EU AI Act will be provided
+    but the laws are more nuanced and complicated than that so take everything with a grain of salt.
+</p>
+<p>
+    Recently, a Tech&Meet was hosted by the company Mr. Franklin, to talk about the EU AI Act. 
     What is a Tech&Meet you ask? It is an event hosted at Howest, the school I currently go to,
     where people come and talk about trending topics in the tech industry. 
     This year those are AI and Cybersecurity. 
@@ -100,7 +104,7 @@
 </p>
 <h4>Who is Who?</h4>
 <p>
-    The act puts every company along the supply chain in a certain category.
+    The act puts organisations along the AI supply chain in certain categories.
     That category specifies the regulations and requirements the company has to follow.
 </p>
 <h5>Provider</h5>
@@ -115,21 +119,21 @@
     They have to check if the provider is in compliance with the act, 
     employees have enough AI literacy and inform end-users of the use of AI.
     When the model is classified as high-risk then they also need to install human oversight. 
-    Once a deployer does rebranding of a model, substantially changes it or 
-    uses it in a non-inteded way then it is considered a provider.
+    Once a deployer rebrands a model, substantially changes it or 
+    uses it in an unintended way, then it is considered a provider.
 </p>
 <h5>Importer</h5>
 <p>
     Importers bring a model of a non-EU provider on the EU market. 
     They are the contact point for EU-authorities.
 </p>
-<h5>Distributers</h5>
+<h5>Distributors</h5>
 <p>
-    Distributers make an AI-system available on the EU market but 
+    Distributors make an AI-system available on the EU market but 
     on a different part on the supply chain than importers.
     An example of this is an app store. They have similar responsibilities to deployers.
 </p>
-<h4>The Risk Piramid</h4>
+<h4>The Risk Pyramid</h4>
 <p>
     All models are either classified in different risk categories or 
     considered general purpose AI (GPAI). GPAI will be discussed later.
@@ -137,14 +141,14 @@
 <h5>Unacceptable Risk</h5>
 <p>
     Applications falling under this category are illegal. 
-    There are a few exception though.
+    There are a few exception, though.
 </p>
 <h6>Here is a list of everything currently considered illegal:</h6>
 <ul>
     <li>Cognitive behavioral manipulation</li>
     <li>Social scoring</li>
     <li>Generating intimate images without consent</li>
-    <li>Biometric categorization of People</li>
+    <li>Biometric categorization of people</li>
     <li>Real-time and remote biometric identification systems</li>
     <li>Predicting the risk that someone might commit a crime only using profiling</li>
     <li>Emotion detection at work or in educational institutions</li>
@@ -154,13 +158,14 @@
 <ul>
     <li>Emotion detection for medical and security purposes</li>
     <li>Post-remote biometric identification for law enforcement</li>
-    <li>Real-time biomentric identification for law enforcement under specific circumstances</li>
+    <li>Real-time biometric identification for law enforcement under specific circumstances</li>
 </ul>
 <h5>High Risk</h5>
 <p>
     Systems falling under this category are legal but fall under strict requirements.
-    This is because there expected to negatively affect safety or fundamental rights.
-    All of the models fall under two categories. Ones that fall under EU product safety legislation
+    This is because they are expected to negatively affect safety or fundamental rights.
+    High-risk systems fall into two main categories. 
+    Ones that fall under EU product safety legislation
     such as planes, cars, toys and elevators and ones that are used in specific domains.
 </p>
 <h6>Those are the following domains:</h6>
@@ -174,14 +179,14 @@
 </ul>
 <h6>The requirements for providers are the following:</h6>
 <ul>
-    <li>Having a risk-management and system</li>
+    <li>Having a risk-management system</li>
     <li>Applying data governance</li>
     <li>Providing technical documentation</li>
     <li>Adding logging to the system</li>
     <li>Creating the system in such a way that human oversight is possible</li>
     <li>Ensuring that the system is accurate, robust and secure</li>
     <li>Providing instructions to deployers</li>
-    <li>Having a quality-management and system</li>
+    <li>Having a quality-management system</li>
     <li>Registering the system in an EU-database</li>
     <li>Receiving a CE marking</li>
 </ul>
@@ -194,7 +199,7 @@
     <li>Expression detection</li>
     <li>Biometric categorisation</li>
 </ul>
-<h6>requirements:</h6>
+<h6>Requirements:</h6>
 <ul>
     <li>Watermarking generated content</li>
     <li>Putting in safeguards against illegal content generation</li>
@@ -203,14 +208,14 @@
 <h5>Minimal Risk</h5>
 <p>
     Systems not falling under one of the above categories or GPAI are considered minimal risk. 
-    They don't have any requirements.
+    They don't have any requirements in this act.
 </p>
 <h4>General Purpose AI</h4>
 <p>
     GPAI systems have significant generality and can perform a wide range of tasks.
-    When the system passes a treshhold then it is also considered to have systemic risk 
+    When the system passes a treshold then it is also considered to have systemic risk 
     which adds more requirements. Currently the treshhold is 10<sup>25</sup> floating-point 
-    operations per second, which does make me wonder what happens if a model is trained with 
+    operations, which makes me wonder what happens if a model is trained with 
     a different format for fractions such as posits. 
 </p>
 <h6>These are the requirements for GPAI systems:</h6>
@@ -237,25 +242,27 @@
 <h5>The timeline:</h5>
 <ol>
     <li>1 August 2024: The AI Act entered the law but without enforcement</li>
-    <li>2 February 2025: Ban on unnacceptable risk systems and AI literacy obligations</li>
+    <li>2 February 2025: Ban on unacceptable risk systems and AI literacy obligations</li>
     <li>2 August 2025: Rules for GPAI</li>
-    <li>2 August 2026: Banning of deepfakes and intimate content</li>
+    <li>2 August 2026: Enforcement of most rules and general transparency obligations</li>
+    <li>2 December 2026: Banning of deepfakes and intimate content</li>
+    <li>2 August 2027: Legacy GPAI systems must be fully compliant</li>
     <li>2 December 2027: High-risk requirements for standalone systems</li>
     <li>2 August 2028: High-risk requirements for regulated systems such as toys</li>
-    <li>2 August 2030: Legacy AI systems must be fully compliant</li>
+    <li>2 August 2030: All legacy AI systems must be fully compliant</li>
 </ol>
 <h4>Fines</h4>
 <p>
     So what does it cost a company to not comply? 
-    Well that depends on the risk level of the system.
+    Well that depends on the type of offence.
     There is a fixed amount or a percentage of yearly revenue per fine and 
-    the highest of those two has to be paid. 
+    the highest of those two has to be paid. These numberss are upper bounds.
 </p>
-<h5>These are the different fines</h5>
+<h5>These are the different fines:</h5>
 <ul>
-    <li>Limited risk: 1% or € 7 500 000</li>
-    <li>High risk and GPAI: 3% or € 15 000 000</li>
-    <li>Unnacceptable AI: 7% or 35 000 000</li>
+    <li>Prohibited practices: 7% or 35 000 000</li>
+    <li>Other AI act infringements: 3% or € 15 000 000</li>
+    <li>Incorrect, incomplete or misleading information: 1% or € 7 500 000</li>
 </ul>
 <p>
     I hope that this gave you a good overview of what is in the EU AI Act. 
